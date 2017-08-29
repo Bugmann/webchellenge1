@@ -1,0 +1,342 @@
+.icon{
+    font-size:28px;
+    color:#a1a1a1;
+    border-right: solid 1px #a1a1a1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition:all 0.4s ease-in-out;
+}
+.icon-facebook{
+    font-size: 25px;
+    padding-left: 3px;
+}
+.icon-user{
+    padding-top: 2px;
+    padding-left: 3px;
+    font-size:25px;
+}
+.icon-phone{
+    font-size: 25px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+body {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #afafaf;
+    font-family: 'Titillium Web', sans-serif;
+}
+.container {
+    width: 100%;
+}
+label {
+    width: 60px;
+    height: 30px;
+}
+.l {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.box-form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 21px 21px;
+    box-sizing: border-box;
+}
+.logo {
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.logo img {
+    opacity: 0.3;
+    display: block;
+    margin: 0px auto;
+    float: none;
+    box-sizing: border-box;
+    border: none;
+    max-width: 100%;
+}
+main {
+    width: 900px;
+    margin: 0 auto;
+    overflow:hidden;
+}
+.left {
+    width: 50%;
+    float: left;
+}
+h2 {
+    margin: 20px 0px;
+    font-family: "Myriad Pro";
+    color: white;
+    font-size: 32px;
+    text-shadow: 2px 2px 2px #3e0b11;
+    font-weight: 100;
+    text-align: center;
+}
+.sign .input:nth-of-type(2) {
+    margin-bottom: 10px;
+}
+form {
+    margin: 25px auto;
+    background-color: #f4f4f4;
+    width: 400px;
+    border-radius: 5px;
+    border: solid 15px rgba(0, 0, 0, 0.4);
+    background-clip: content-box;
+}
+
+.input {
+    max-width: 100%;
+    height: 45px;
+    border: solid 1px #a1a1a1;
+    border-radius: 5px;
+    background-color: white;
+    margin: 20px 0px;
+    box-sizing: border-box;
+}
+.input:first-of-type {
+    margin-top: 0;
+}
+select {
+    width: 88%;
+    height: 41px;
+    font-size: 20px;
+    border: none;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    border: solid 1px transparent;
+    color: #afafaf;
+    top: 0;
+    right: 0;
+    border-radius: 4px;
+    float: right;
+    left: 0;
+}
+.input:nth-child(5) {
+    margin-bottom: 0px;
+}
+input {
+    border: none;
+    height: 30px;
+    font-size: 22px;
+    color: #afafaf;
+    border-radius: 2px;
+    margin-left: 2px;
+}
+input[type="checkbox"] {
+    position: absolute;
+    margin-top: -1px;
+    margin-left: -1px;
+    border: none;
+    height: 12px;
+    color: black;
+    width: 12px;
+}
+.square {
+    width: 12px;
+    height: 12px;
+    background: #fcfff4;
+    border: none;
+    box-shadow: 1px 1px 0px #a1a1a1;
+    position: relative;
+    padding: 5px 5px;
+    box-sizing: padding-content;
+    float: left;
+}
+p {
+    float: left;
+    margin-left: 20px;
+}
+.row {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.square label {
+    cursor: pointer;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 4px;
+    top: 4px;
+    border: none;
+    padding-right: 0;
+    background: #f4f4f4;
+}
+select:focus {
+    border: solid 1px #999999;
+    box-shadow: 2px 2px 2px #999999
+}
+select:focus ~ i{
+    color:#2a3e29!important;
+}
+.input input:focus {
+    border: solid 1px #999999;
+    box-shadow: 2px 2px 2px #999999;
+}
+.input input[type="text"]:focus ~ i.icon{
+    color:#2a3e29!important;
+}
+.input input {
+    width: 87%;
+    height: 39px;
+    position: relative;
+    top: 0;
+    border: solid 1px transparent;
+    left: 0;
+    right: 0px;
+    transition:all 0.4s ease-in-out;
+    float: right;
+    border-radius: 4px;
+}
+.square label::after {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 12px;
+    background: #7ec31f;
+}
+.square input:focus{
+    box-shadow:1px 1px 6px black;
+}
+.square input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+input[type="submit"] {
+    width: 100%;
+    border: 1px solid #3b9a00;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #a3d840 0%, #7ec31f 100%);
+    color: white;
+    font-size: 17px;
+    padding: 5px;
+    height: 40px;
+    transition:all 0.6s ease-in-out;
+}
+input[type="submit"]:not(.done):hover{
+    background:#203820;   
+    color:#3b9a00;
+}
+form .button-half {
+    width: 150px;
+    float: right;
+}
+textarea {
+    resize: none;
+    font-size: 16px;
+    border: 1px #a1a1a1 solid;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+textarea:focus {
+    box-shadow: 0px 0px 2px
+}
+.right {
+    float: right;
+    width: 50%;
+}
+.rows {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rows .send {
+    width: 140px;
+    display: block;
+    float: left;
+}
+.rows .done {
+    width: 140px;
+    float: right;
+    display: block;
+    opacity: 0.5;
+}
+.subscribe .rows .done {
+    background: linear-gradient(to bottom, #f55d6e 0%, #f03948 100%);
+}
+footer {
+    text-align: center;
+}
+footer img {
+    margin-top: 50px;
+    border: none;
+    opacity: 0.6;
+    max-width: 100%;
+}
+@media only screen and (max-width: 1000px) {
+    .left {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .right {
+        margin: 0 auto;
+        float: none;
+        width: 100%;
+    }
+    main {
+        width: auto;
+    }
+}
+@media only screen and (max-width: 500px) {
+    form {
+        width: 320px;
+    }
+    .input input {
+        width: 83%;
+        font-size: 15px;
+    }
+    select {
+        width: 83%;
+    }
+    p {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    .rows .send {
+        width: 100px;
+    }
+    form .button-half {
+        width: 100px;
+    }
+    .rows .done {
+        width: 100px;
+    }
+    .button-half {
+        width: 100%;
+    }
+    div p {
+        padding-top: 5px;
+    }
+}
+@media only screen and (max-width: 390px) {
+    form {
+        width: 260px;
+        margin: 20px auto;
+    }
+    .rows .send {
+        width: 100px;
+    }
+    .rows .done {
+        width: 100px;
+    }
+    .button-half {
+        width: 100%;
+    }
+
+    .icon{
+        font-size:20px;
+    }
+}
